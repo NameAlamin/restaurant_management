@@ -57,5 +57,6 @@
 
     <modules>
         <module>pizza_api</module>
+        <module>burger_api</module>
     </modules>
 </project>

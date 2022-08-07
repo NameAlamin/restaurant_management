@@ -58,6 +58,7 @@
     <modules>
         <module>pizza_api</module>
         <module>burger_api</module>
+        <module>steak_api</module>
         <module>app_frontend_restaurant_management</module>
     </modules>
 </project>

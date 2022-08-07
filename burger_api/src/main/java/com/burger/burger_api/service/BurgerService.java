@@ -1,7 +1,7 @@
 package com.burger.burger_api.service;
 
 import com.burger.burger_api.entity.BurgerDetails;
-import com.burger.burger_api.BurgerRepository;
+import com.burger.burger_api.repository.BurgerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

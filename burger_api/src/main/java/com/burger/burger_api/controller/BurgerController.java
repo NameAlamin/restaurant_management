@@ -8,11 +8,12 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@CrossOrigin
 public class BurgerController {
     @Autowired
     private BurgerService service;
 
-    @GetMapping("/burger")
+    @GetMapping("/burgers")
     public List<BurgerDetails> getBurgerDetails1(){
         return service.getBurgerDetails();
     }

@@ -7,6 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PizzaComponent } from './pizza/pizza.component';
 import { BurgerComponent } from './burger/burger.component';
 import { SteakComponent } from './steak/steak.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -18,9 +19,11 @@ import { SteakComponent } from './steak/steak.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

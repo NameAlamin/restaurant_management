@@ -1,4 +1,18 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from "@angular/router";
+import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
+import {HttpClient} from "@angular/common/http";
+
+export class Burger {
+  constructor(
+    public id: number,
+    public name: string,
+    public size: string,
+    public price: number
+  ) {
+  }
+}
+
 
 @Component({
   selector: 'app-burger',
@@ -7,9 +21,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BurgerComponent implements OnInit {
 
-  constructor() { }
+  burgers: Burger[] | undefined;
+
+  constructor(
+    private httpClient: HttpClient
+  ) {
+
+  }
 
   ngOnInit(): void {
+    this.getBurgers();
+  }
+
+  getBurgers(){
+    this.httpClient.get<any>('http://localhost:8080/burgers').subscribe(
+      response => {
+        console.log(response);
+        this.burgers = response;
+      }
+    );
   }
 
 }

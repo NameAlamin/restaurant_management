@@ -1,4 +1,4 @@
-package com.burger.burger_api;
+package com.burger.burger_api.repository;
 
 import com.burger.burger_api.entity.BurgerDetails;
 import org.springframework.data.jpa.repository.JpaRepository;

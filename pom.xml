@@ -10,7 +10,7 @@
     </parent>
 
     <groupId>com.restaurant.management</groupId>
-    <artifactId>E-restaurant-management</artifactId>
+    <artifactId>restaurant-management</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>Restaurant-Management</name>
     <description>Restaurant-Management</description>
@@ -56,9 +56,6 @@
     </properties>
 
     <modules>
-        <module>rm_frontend</module>
-        <module>piza_api</module>
-        <module>piza_api</module>
-        <module>stake_api</module>
+        <module>pizza_api</module>
     </modules>
 </project>
